@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #253c6d;
+  --text-color: #f2842f;
+  --button-color: #f2842f;
+  --border-color: #455b8a;
+  --secondary-color: #fff;
+}
+.profile-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+.profile-picture img {
+  border: solid 5px var(--border-color);
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background-color: var(--text-color);
+}
+.profile-name h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 2px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+.role p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: aliceblue;
+  text-align: center;
+}
+.description p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 15px;
+  color: aliceblue;
+}
+.contact {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contact .social-link {
+  height: 40px;
+  width: 40px;
+  background-color: var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+   transition: 0.3s;
+}
+.social-link i {
+  color: var(--secondary-color);
+  font-size: 20px;
+ 
+}
+.social-link:hover {
+  background-color: var(--button-color);
+   transform: translateY(-3px);
+}
+.portfolio-btn {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: var(--border-color);
+  border-style: none;
+  padding: 10px;
+  width: 100%;
+  transition: 0.3s;
+}
+.portfolio-btn a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  
+}
+.portfolio-btn:hover {
+  background-color: var(--button-color);
+   transform: translateY(-3px);
+}
+@media (max-width: 400px) {
+  .profile-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+  }
+}
